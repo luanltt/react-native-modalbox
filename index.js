@@ -91,7 +91,7 @@ var ModalBox = createReactClass({
   },
 
   getInitialState: function () {
-    var position = this.props.entry === 'top' ? -screen.height : screen.height;
+    var position = this.props.entry === 'top' ? -screen.height : screen.height + 50;
     return {
       position: this.props.startOpen ? new Animated.Value(0) : new Animated.Value(position),
       backdropOpacity: new Animated.Value(0),
